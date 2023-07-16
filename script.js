@@ -11,6 +11,10 @@ const newGameBtn = document.getElementById('newGameBtn');
 function showPopup(message) {
   popupMessage.textContent = message;
   resultPopup.style.display = 'block';
+  if (message === 'Congratulations! You won the game!') {
+    // Вызываем функцию для создания эффекта конфетти
+    createConfetti();
+  }
 }
 
 function hidePopup() {
@@ -120,3 +124,23 @@ buttons.forEach(button =>{
         playRound(button.id)
     })
 })
+
+
+
+function createConfetti() {
+    const confettiSettings = {
+      target: 'confetti', // ID элемента, где будет создан эффект конфетти
+      max: 80,
+      size: 2,
+      animate: true,
+      props: ['circle', 'square', 'triangle', 'line'],
+      colors: [[255, 255, 255], [255, 0, 0], [0, 255, 0], [0, 0, 255]], // Цвета конфетти
+      clock: 25,
+      rotate: true,
+      start_from_edge: false,
+      respawn: true,
+    };
+  
+    const confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+  }
