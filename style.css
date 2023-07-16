@@ -1,0 +1,10 @@
+h1, h2, h3, p {
+    font-family: "ZCOOLKuaiLe-Regular";
+}
+
+@font-face {
+    font-family: "ZCOOLKuaiLe-Regular"; 
+    src: url("../fonts/ZCOOLKuaiLe-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
