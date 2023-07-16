@@ -1,5 +1,7 @@
-h1, h2, h3, p {
+h1, h2, h3 {
     font-family: "ZCOOLKuaiLe-Regular";
+    font-style: normal; 
+    font-weight: normal; 
 }
 
 @font-face {
