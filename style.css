@@ -1,12 +1,212 @@
-h1, h2, h3 {
-    font-family: "ZCOOLKuaiLe-Regular";
-    font-style: normal; 
-    font-weight: normal; 
+* {
+    font-family: ZCOOLKuaiLe-Regular;
 }
+
+h1, h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    /* align-items: center;
+    justify-items: center; */
+    font-size: 64px;
+}
+
+p {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+.instruction {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    color: #FF0099;
+}
+
+.rules {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#hao, #woo, #hor, div#rule-emoji img{
+    width: 250px;
+    height: 450px;
+    /* margin: 50px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#hao-sign, #woo-sign, #hor-sign, div#rule-emoji img {
+    width: 250px;
+    height: 250px;
+}
+
+#hao-emoji, #woo-emoji, #hor-emoji{
+    width: 70px;
+    height: 70px;
+}
+
+#hao h3 {
+    /* font-size: 28px; */
+    color: #0055FE;
+}
+
+#woo h3 {
+    /* font-size: 28px; */
+    color: #FE0000;
+}
+
+#hor h3 {
+    /* font-size: 28px; */
+    color: #FF6E01;
+}
+
+div.game-section {
+    background-image: url("../rock-paper-scissors-SVT/images/Union.svg");
+    width: auto;
+    height: auto;
+    color: #0055FE;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.your-choice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* padding: 30px; */
+}
+
+#game #palranghae {
+    background: url("../rock-paper-scissors-SVT/images/frog.svg") no-repeat 0 0;
+    height: 100px;
+    width: 100px;
+    border:0;
+    margin: 10px;
+}
+
+#game #wooahae {
+    background: url("../rock-paper-scissors-SVT/images/rice.svg") no-repeat 0 0;
+    /* size: 50%; */
+    height: 100px;
+    width: 100px;
+    border:0;
+    margin: 10px;
+}
+
+#game #horanghae {
+    background: url("../rock-paper-scissors-SVT/images/tiger.svg") no-repeat 0 0;
+    height: 100px;
+    width: 100px;
+    border:0;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+#game p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#comp-choice {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    /* align-items: center;
+    justify-items: center; */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .popup-content #newGameBtn {
+    display: block;
+    margin: 10px auto; /* Устанавливаем отступы, чтобы кнопка была посередине */
+    padding: 8px 15px;
+    background-color: #FF0099; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста на кнопке */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: ZCOOLKuaiLe-Regular;
+}
+
+/* При наведении на кнопку меняем ее цвет фона */
+.popup-content #newGameBtn:hover {
+    background-color: #FF66CC;
+}
+
+  #popupMessage {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  #newGameBtn {
+    font-size: 28px;
+    border: none;
+    color: none;
+    /* padding: 8px 15px; */
+  }
+  
+  
+  /* Увеличиваем картинку при наведении */
+  .your-choice input:hover {
+    transform: scale(1.2);
+  }
 
 @font-face {
     font-family: "ZCOOLKuaiLe-Regular"; 
-    src: url("../fonts/ZCOOLKuaiLe-Regular.ttf"); 
-    /* font-style: normal; 
-    font-weight: normal;  */
+    src: url("../rock-paper-scissors-SVT/fonts/ZCOOLKuaiLe-Regular.ttf");
     } 
+
