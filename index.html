@@ -7,47 +7,55 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body background="../rock-paper-scissors-SVT/images/bg.svg">
+<body background="../rock-paper-scissors-SVT/images/blue-bg.svg">
     <div class="instruction">
         <h1>INSTRUCTION</h1>
-        <h2>"Rock paper scissors" - Seventeen version</h2>
+        <p>"Rock paper scissors" - Seventeen version</p>
         <p>3 fighter | 5 lives | infinity tries</p>
     </div>
     <div class="rules">
         <div id="hao">
-            <img src="../rock-paper-scissors-SVT/images/hao.png" alt="hao"> 
-            <p>palranghae</p>
-            <img src="../rock-paper-scissors-SVT/images/frog.svg" alt="frog emoji">
+            <img id="hao-sign" src="../rock-paper-scissors-SVT/images/hao.png" alt="hao"> 
+            <h3>palranghae</h3>
+            <img id="hao-emoji" src="../rock-paper-scissors-SVT/images/frog.svg" alt="frog emoji">
         </div>
-        <div id="wooahae">
-            <img src="../rock-paper-scissors-SVT/images/woo.png" alt="woo">
-            <p>wooahae</p>
-            <img src="../rock-paper-scissors-SVT/images/rice.svg" alt="rice emoji">
+        <div id="woo">
+            <img id="woo-sign" src="../rock-paper-scissors-SVT/images/woo.png" alt="woo">
+            <h3>wooahae</h3>
+            <img id="woo-emoji" src="../rock-paper-scissors-SVT/images/rice.svg" alt="rice emoji">
         </div>
-        <div id="horanghae">
-            <img src="../rock-paper-scissors-SVT/images/hor.png" alt="hor">
-            <p>horanghae</p>
-            <img src="../rock-paper-scissors-SVT/images/tiger.svg" alt="tiger emoji">
+        <div id="hor">
+            <img id="hor-sign" src="../rock-paper-scissors-SVT/images/hor.png" alt="hor">
+            <h3>horanghae</h3>
+            <img id="hor-emoji" src="../rock-paper-scissors-SVT/images/tiger.svg" alt="tiger emoji">
         </div>
-        <div id="rule">
+        <div id="rule-emoji">
             <img src="../rock-paper-scissors-SVT/images/rule.svg" alt="rules">
         </div>   
     </div>
-    <div class="game_section">
+    <div class="game-section">
         <div id="game">
             <h2>GAME</h2>
-            <p>Your choice:</p>
-            <input type="button" value="rock"></input>
-            <input type="button" value="paper"></input>
-            <input type="button" value="scissors"></input>
-            <p>Computer choice:</p>
+            <div class="your-choice">
+                <h3>Your choice:</h3>
+                <input type="button" id="horanghae"></input>
+                <input type="button" id="palranghae"></input>
+                <input type="button" id="wooahae"></input>
+            </div>
+            <h3>Computer choice:</h3>
+            <div id="comp-choice"></div>
         </div>
         <div id="score">
             <h2>SCORE</h2>
-            <div id="result"></div>
+            <div id="result" style="font-family: ZCOOLKuaiLe-Regular;"></div>
         </div>
       </div>
-      <button id="new_game" onclick="location.reload()">Reload Page for New Game</button>
+      <div class="popup" id="resultPopup">
+        <div class="popup-content">
+          <h2 id="popupMessage">Result Message</h2>
+          <button id="newGameBtn">New Game</button>
+        </div>
+      </div>
       <script src="script.js"></script>
 </body>
 </html>
